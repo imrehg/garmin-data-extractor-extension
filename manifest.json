@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Garmin Data Extractor",
+  "version": "0.1.0",
+
+  "description": "Exports your data from the Garmin Connect website.",
+
+  "action": {
+    "default_icon": "icons/garmin-extractor-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://connect.garmin.com/*"],
+      "js": ["heartrate.js"]
+    }
+  ],
+
+  "permissions": [
+    "cookies"
+  ]
+}

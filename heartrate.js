@@ -40,7 +40,6 @@ function getData() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         exportHeartRateData(pageDate, data.heartRateValues);
       })
       .catch((error) => {
@@ -105,7 +104,9 @@ if ("navigation" in window) {
     onNavigate();
   });
 } else {
-  console.log("Navigation API not supported, using fallback methods.");
+  console.warn(
+    "Navigation API not supported, this won't work, have to refresh on the target page to show export button.",
+  );
 }
 // Kick it off on the first load; Navigation API doesn't trigger then.
 onNavigate();

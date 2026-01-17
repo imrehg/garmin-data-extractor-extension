@@ -3,10 +3,6 @@
   "name": "Garmin Data Extractor",
   "version": "0.1.0",
   "author": "Gergely Imreh",
-  "developer": {
-    "name": "Gergely Imrejh",
-    "url": "https://gergely.imreh.net"
-  },
 
   "description": "Exports your data from the Garmin Connect website.",
 

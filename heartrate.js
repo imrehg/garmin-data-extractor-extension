@@ -55,8 +55,8 @@ function formatTimestamp(ms) {
 
 function exportHeartRateData(date, heartrateData) {
   const rows = [
-    ["Timestamp", "DateTime", "HeartRate"],
-    ...heartrateData.map((d) => [d[0], formatTimestamp(d[0]), d[1]]),
+    ["UnixEpochTimestamp", "LocalDateTime", "HeartRate"],
+    ...heartrateData.map((d) => [d[0] / 1000, formatTimestamp(d[0]), d[1]]),
   ];
 
   const csvContent = rows.map((row) => row.join(",")).join("\n");

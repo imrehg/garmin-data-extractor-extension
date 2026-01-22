@@ -10,6 +10,11 @@
     "default_icon": "icons/garmin-extractor-48.png"
   },
 
+  "icons": {
+    "48": "icons/garmin-extractor-48.png",
+    "128": "icons/garmin-extractor-128.png",
+  }
+
   "content_scripts": [
     {
       "matches": ["https://connect.garmin.com/*"],
